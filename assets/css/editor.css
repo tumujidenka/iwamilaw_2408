@@ -1,1 +1,12 @@
 @charset "UTF-8";
+/**
+* 編集画面用CSS
+*/
+.editor-styles-wrapper .sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .editor-styles-wrapper .sp {
+    display: block;
+  }
+}/*# sourceMappingURL=editor.css.map */

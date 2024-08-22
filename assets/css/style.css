@@ -1,1 +1,18 @@
+.sp {
+  display: none;
+}
 
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

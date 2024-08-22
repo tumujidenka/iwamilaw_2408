@@ -1,0 +1,12 @@
+@use 'variables';
+
+
+.sp{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .sp{ //スマホサイズでのみ実行されるCSS
+        display:block;
+    }
+}
