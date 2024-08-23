@@ -1,3 +1,32 @@
+@charset "UTF-8";
+h2 {
+  border-top: none;
+  border-bottom: none;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px; /*線の上下位置*/
+  display: inline-block;
+  width: 120px; /*線の長さ*/
+  height: 4px; /*線の太さ*/
+  transform: translateX(-50%); /*位置調整*/
+  background-color: #D4AF37; /*線の色*/
+}
+
+h3 {
+  display: inline-block;
+  border-bottom: 2px solid #D4AF37;
+  padding: 0;
+}
+
+h3::after {
+  border: none;
+}
+
 .sp {
   display: none;
 }
@@ -7,6 +36,52 @@
     display: block;
   }
 }
+.firstView {
+  height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .firstView h1 {
+    line-height: 1.2rem;
+  }
+  .firstView p {
+    line-height: 0.9rem;
+  }
+}
+.laborProblem figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2 {
+  border-top: none;
+  border-bottom: none;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px; /*線の上下位置*/
+  display: inline-block;
+  width: 120px; /*線の長さ*/
+  height: 4px; /*線の太さ*/
+  transform: translateX(-50%); /*位置調整*/
+  background-color: #D4AF37; /*線の色*/
+}
+
+h3 {
+  display: inline-block;
+  border-bottom: 2px solid #D4AF37;
+  padding: 0;
+}
+
+h3::after {
+  border: none;
+}
+
 .sp {
   display: none;
 }
