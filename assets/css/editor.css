@@ -8,10 +8,11 @@
   font-weight: normal;
   font-style: normal;
 }
-.editor-styles-wrapper h2 {
+.editor-styles-wrapper h2.headLine {
   border-top: none;
   border-bottom: none;
   position: relative;
+  margin-top: 80px !important;
   margin-bottom: 24px !important;
 }
 .editor-styles-wrapper h2::after {

@@ -5,10 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
-h2 {
+h2.headLine {
   border-top: none;
   border-bottom: none;
   position: relative;
+  margin-top: 80px !important;
   margin-bottom: 24px !important;
 }
 
@@ -59,21 +60,21 @@ h3 + p {
   height: 60vh;
 }
 
-.laborProblem figure {
+.laborProblem figure, .laborProblemSpecial figure {
   margin-bottom: 24px;
 }
 
-.laborProblem figure {
+.laborProblem figure, .laborProblemSpecial figure {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.laborProblem .seeMore {
+.laborProblem .seeMore, .laborProblemSpecial .seeMore {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.laborProblem .seeMore > p {
+.laborProblem .seeMore > p, .laborProblemSpecial .seeMore > p {
   display: inline-block;
   border-bottom: 2px solid #D4AF37;
   margin: 0 !important;
@@ -87,7 +88,7 @@ h3 + p {
   .firstView p {
     line-height: 0.9rem;
   }
-  .laborProblem p {
+  .laborProblem p, .laborProblemSpecial p {
     font-size: 16px !important;
   }
 }
@@ -97,10 +98,11 @@ h3 + p {
   font-weight: normal;
   font-style: normal;
 }
-h2 {
+h2.headLine {
   border-top: none;
   border-bottom: none;
   position: relative;
+  margin-top: 80px !important;
   margin-bottom: 24px !important;
 }
 
