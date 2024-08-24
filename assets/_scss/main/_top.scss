@@ -4,15 +4,10 @@
     height:60vh;
 }
 
-@media screen and (max-width:768px) {
-    .firstView{
-        h1{
-            line-height: 1.2rem;
-        }
-        p{
-            line-height: 0.9rem;
-        }
-    }        
+.laborProblem{
+    figure{
+        margin-bottom: 24px;
+    }
 }
 
 .laborProblem{
@@ -21,7 +16,39 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    .seeMore{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .seeMore>p{
+        display: inline-block;
+        border-bottom: 2px solid variables.$sub-color;
+        margin: 0!important;
+    }
 }
 
+
+
+
+@media screen and (max-width:768px) {
+    .firstView{
+        h1{
+            font-size: 36px!important;
+            line-height: 1.5rem;
+        }
+        p{
+            line-height: 0.9rem;
+        }
+    }        
+
+    .laborProblem{
+        p{
+            font-size: 16px!important;
+        }
+    }
+}
 
 

@@ -1,9 +1,17 @@
 @use 'variables';
 
+@font-face {
+    font-family: 'Hiragino Mincho Pro';
+    src: url( "../../../fonts/hiraginomincho.otf") format('otf'); /* medium */
+    font-weight: normal;
+    font-style: normal;
+   }
+
 h2{
     border-top: none;
     border-bottom: none;
     position:relative;
+    margin-bottom: 24px!important;
 }
 
 h2::after{
@@ -29,11 +37,24 @@ h3::after{
     border:none;
 }
 
+p{
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 20px;
+}
+
+h3+p{
+    margin-bottom: 32px;
+}
+
 .sp{
     display: none;
 }
 
 @media screen and (max-width:768px){
+    h2{
+        font-size: 24px!important;
+    }
+
     .sp{ //スマホサイズでのみ実行されるCSS
         display:block;
     }

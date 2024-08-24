@@ -1,8 +1,15 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Hiragino Mincho Pro";
+  src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
+  font-weight: normal;
+  font-style: normal;
+}
 h2 {
   border-top: none;
   border-bottom: none;
   position: relative;
+  margin-bottom: 24px !important;
 }
 
 h2::after {
@@ -27,11 +34,23 @@ h3::after {
   border: none;
 }
 
+p {
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+}
+
+h3 + p {
+  margin-bottom: 32px;
+}
+
 .sp {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px !important;
+  }
   .sp {
     display: block;
   }
@@ -40,24 +59,49 @@ h3::after {
   height: 60vh;
 }
 
-@media screen and (max-width: 768px) {
-  .firstView h1 {
-    line-height: 1.2rem;
-  }
-  .firstView p {
-    line-height: 0.9rem;
-  }
+.laborProblem figure {
+  margin-bottom: 24px;
 }
+
 .laborProblem figure {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+.laborProblem .seeMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.laborProblem .seeMore > p {
+  display: inline-block;
+  border-bottom: 2px solid #D4AF37;
+  margin: 0 !important;
+}
 
+@media screen and (max-width: 768px) {
+  .firstView h1 {
+    font-size: 36px !important;
+    line-height: 1.5rem;
+  }
+  .firstView p {
+    line-height: 0.9rem;
+  }
+  .laborProblem p {
+    font-size: 16px !important;
+  }
+}
+@font-face {
+  font-family: "Hiragino Mincho Pro";
+  src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
+  font-weight: normal;
+  font-style: normal;
+}
 h2 {
   border-top: none;
   border-bottom: none;
   position: relative;
+  margin-bottom: 24px !important;
 }
 
 h2::after {
@@ -82,11 +126,23 @@ h3::after {
   border: none;
 }
 
+p {
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+}
+
+h3 + p {
+  margin-bottom: 32px;
+}
+
 .sp {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px !important;
+  }
   .sp {
     display: block;
   }
