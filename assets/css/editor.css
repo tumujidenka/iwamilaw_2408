@@ -65,6 +65,10 @@
 .editor-styles-wrapper .sp {
   display: none;
 }
+.editor-styles-wrapper .downArrow {
+  display: flex;
+  justify-content: center;
+}
 .editor-styles-wrapper .seeMore {
   display: flex;
   flex-direction: row;
@@ -74,6 +78,9 @@
   display: inline-block;
   border-bottom: 2px solid #D4AF37;
   margin: 0 !important;
+}
+.editor-styles-wrapper ol {
+  font-family: "Hiragino Mincho Pro";
 }
 @media screen and (max-width: 767px) {
   .editor-styles-wrapper h1.headLine {

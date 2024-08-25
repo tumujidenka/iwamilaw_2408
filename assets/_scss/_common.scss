@@ -76,6 +76,11 @@ h3+p{
     display: none;
 }
 
+.downArrow{
+    display: flex;
+    justify-content: center;
+}
+
 .seeMore{
     display: flex;
     flex-direction: row;
@@ -86,6 +91,10 @@ h3+p{
     display: inline-block;
     border-bottom: 2px solid variables.$sub-color;
     margin: 0!important;
+}
+
+ol{
+    font-family: 'Hiragino Mincho Pro';
 }
 
 @media screen and (max-width:767px){
