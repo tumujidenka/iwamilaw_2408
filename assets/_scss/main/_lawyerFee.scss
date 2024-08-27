@@ -1,0 +1,14 @@
+@use '../variables';
+
+.feeTable{
+    table{
+        border: 1px solid #777777;
+    }
+    thead{
+        background-color: variables.$main-color;
+        color:#fff;
+    }
+    tbody > tr:nth-child(1),tr:nth-child(3){
+        background-color: #E3E3E3;
+    }
+}

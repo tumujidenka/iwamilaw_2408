@@ -185,6 +185,17 @@ h4::after {
   transform: translateX(16px);
 }
 
+.feeTable table {
+  border: 1px solid #777777;
+}
+.feeTable thead {
+  background-color: #00194A;
+  color: #fff;
+}
+.feeTable tbody > tr:nth-child(1), .feeTable tr:nth-child(3) {
+  background-color: #E3E3E3;
+}
+
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
