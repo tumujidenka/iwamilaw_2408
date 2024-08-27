@@ -1,0 +1,18 @@
+@use '../variables';
+
+.form{
+    .submitBtn{
+        display: flex;
+        justify-content: center;
+    }
+    div.wpcf7 .wpcf7-spinner {
+        display: none;
+    }
+    input.btn-block{
+        width:50%;
+    }
+    .wpcf7-form-control-wrap{
+        display: flex;
+        justify-content: center;
+    }
+}

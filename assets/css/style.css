@@ -196,6 +196,21 @@ h4::after {
   background-color: #E3E3E3;
 }
 
+.form .submitBtn {
+  display: flex;
+  justify-content: center;
+}
+.form div.wpcf7 .wpcf7-spinner {
+  display: none;
+}
+.form input.btn-block {
+  width: 50%;
+}
+.form .wpcf7-form-control-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
