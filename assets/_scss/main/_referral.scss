@@ -1,0 +1,31 @@
+@use '../variables';
+
+.name{
+    span{
+        font-size: 20px;
+    }
+}
+
+.referralTable{
+    color:variables.$main-color;
+    font-family: 'Hiragino Mincho Pro';
+    tr{
+        border-left: 0px solid #fff;
+        border-right: 0px solid #fff;
+        border-top: 1px solid variables.$main-color;
+        border-bottom: 1px solid variables.$main-color;
+    }
+    tr>td:nth-child(1){
+        width: 15%;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .referralTable{
+        tr>td:nth-child(1){
+            width: 30%;
+            padding-left: 4%;
+        }
+    }
+}

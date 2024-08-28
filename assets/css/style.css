@@ -211,6 +211,31 @@ h4::after {
   justify-content: center;
 }
 
+.name span {
+  font-size: 20px;
+}
+
+.referralTable {
+  color: #00194A;
+  font-family: "Hiragino Mincho Pro";
+}
+.referralTable tr {
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;
+  border-top: 1px solid #00194A;
+  border-bottom: 1px solid #00194A;
+}
+.referralTable tr > td:nth-child(1) {
+  width: 15%;
+  padding-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .referralTable tr > td:nth-child(1) {
+    width: 30%;
+    padding-left: 4%;
+  }
+}
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
