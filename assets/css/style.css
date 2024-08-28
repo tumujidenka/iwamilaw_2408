@@ -236,6 +236,50 @@ h4::after {
     padding-left: 4%;
   }
 }
+.main-section {
+  width: 100%;
+}
+
+.newsRow {
+  border-top: 1px solid #00194A;
+  border-bottom: 1px solid #00194A;
+  border-right: 0px solid #fff;
+  border-left: 0px solid #fff;
+  border-collapse: collapse;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 16px;
+  color: #00194A;
+}
+.newsRow .newsDate {
+  width: 20%;
+}
+.newsRow .newsTitle > a {
+  color: #00194A;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-links {
+  margin: initial !important;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  border: none !important;
+}
+.page-numbers li {
+  margin: 4px !important;
+}
+
+.page-numbers.current {
+  border-radius: 4px;
+}
+
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */

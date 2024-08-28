@@ -1,0 +1,46 @@
+@use '../variables';
+
+.main-section{
+    width:100%;
+}
+
+
+.newsRow{
+    border-top:1px solid variables.$main-color;
+    border-bottom:1px solid variables.$main-color;
+    border-right: 0px solid #fff;
+    border-left: 0px solid #fff;
+    border-collapse: collapse;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 16px;
+    color:variables.$main-color;
+    .newsDate{
+        width:20%;
+    }
+    .newsTitle>a{
+        color:variables.$main-color;
+    }
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav-links{
+    margin: initial!important;
+}
+
+.page-numbers{
+    display: flex;
+    align-items: center;
+    border:none!important;
+    li{
+        margin:4px!important;
+    }
+}
+
+.page-numbers.current{
+    border-radius: 4px;
+}
