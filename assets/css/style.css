@@ -280,6 +280,19 @@ h4::after {
   border-radius: 4px;
 }
 
+.entry-title {
+  color: #00194A;
+}
+
+.entry-meta-item-updated, .entry-meta-item-author, .fa-calendar-alt::before {
+  display: none;
+}
+
+.published {
+  color: #00194A;
+  font-family: "Hiragino Mincho Pro";
+}
+
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */

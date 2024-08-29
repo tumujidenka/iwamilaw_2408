@@ -18,8 +18,6 @@ else :
 			} else {
 				lightning_get_template_part( 'template-parts/entry', get_post_type() );
 			}
-
-
 		endwhile;
 	endif;
 endif;

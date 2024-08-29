@@ -1,0 +1,14 @@
+@use '../variables';
+
+.entry-title{
+    color:variables.$main-color;
+}
+
+.entry-meta-item-updated,.entry-meta-item-author,.fa-calendar-alt::before{
+    display:none;
+}
+
+.published{
+    color:variables.$main-color;
+    font-family: 'Hiragino Mincho Pro';
+}
