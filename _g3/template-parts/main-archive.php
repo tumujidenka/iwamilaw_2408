@@ -46,7 +46,6 @@ do_action( 'lightning_loop_before' );
 ?>
 
 <table>
-
 	<?php if ( have_posts() ) : ?>
 
 		<?php if ( apply_filters( 'lightning_is_extend_loop', false ) ) { ?>

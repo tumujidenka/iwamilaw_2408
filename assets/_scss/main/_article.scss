@@ -12,3 +12,57 @@
     color:variables.$main-color;
     font-family: 'Hiragino Mincho Pro';
 }
+
+.article{
+    max-width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 16px;
+    margin-top:32px;
+    padding:0;
+    border-bottom:1px solid #494C53;
+    figure>img{
+        width: 156px;
+        height: 156px;
+        background-color: #8f8f8f;
+        max-width:fit-content;
+    }
+    .articleText{
+        width:80%;
+        position: relative;
+    }
+    .articleDate{
+        font-family: sans-serif;
+        font-size: 12px;
+        color:#494C53!important;
+        margin-bottom:4px;
+        line-height: 1rem;
+    }
+    .articleTitle{
+        font-size: 20px;
+        margin-bottom: 0px!important;
+    }
+    .articleTitle>a{
+        color: variables.$main-color!important;
+        text-decoration: none;
+    }
+    .articleSummary{
+        font-size: 16px;
+    }
+    .articleCategory{
+        position: absolute;
+        top:0;
+        right:0;
+        border: 1px solid variables.$sub-color;
+        p{
+            margin:0;
+        }
+    }
+}
+
+.articleContents{
+    p{
+        margin-bottom:0px;
+    }
+}
