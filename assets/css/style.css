@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.site-body {
+  padding-top: 0px;
+}
+
 h1.headLine {
   position: relative;
   color: #00194A;
@@ -347,12 +351,143 @@ h4::after {
   margin-bottom: 0px;
 }
 
+.site-header-container {
+  flex-direction: column !important;
+}
+.site-header-container .headerUpper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+}
+.site-header-container .site-header-logo {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.site-header-container .telForm {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.site-header-container .tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.site-header-container .tel img {
+  width: 33px;
+  height: 33px;
+}
+.site-header-container .tel p {
+  margin: 0;
+  margin-left: 4px;
+  font-size: 20px;
+}
+.site-header-container .form a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.site-header-container .form a img {
+  width: 33px;
+  height: 33px;
+}
+.site-header-container .form a p {
+  margin: 0;
+  margin-left: 4px;
+  font-size: 20px;
+}
+
+.global-nav {
+  max-width: 100%;
+  background-color: #00194A;
+  display: flex;
+  justify-content: center !important;
+}
+.global-nav ul {
+  width: 80%;
+  max-width: 1140px;
+}
+.global-nav ul a {
+  color: white !important;
+}
+.global-nav .global-nav-list > li {
+  width: 14%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-header, .site-footer-content {
+  display: none;
+}
+
+.site-footer-copyright > p:nth-child(2) {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .site-header-container .telForm {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .site-header-container .telForm .tel p, .site-header-container .telForm .form p {
+    font-size: 16px;
+  }
+  .vk-mobile-nav-menu-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-header-container .telForm {
+    display: none;
+  }
+  .global-nav {
+    display: none;
+  }
+  .global-nav ul {
+    width: 95%;
+  }
+  .global-nav ul li {
+    flex-shrink: 0;
+  }
+  .global-nav ul a > strong {
+    font-size: 12px;
+  }
+  body .vk-mobile-nav-menu-btn {
+    background-image: url("http://iwamilaw2408.local/wp-content/uploads/2024/09/hamburger.png");
+    background-size: cover;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    display: block;
+    position: absolute;
+    top: 16px !important;
+    left: 80%;
+    border: none;
+  }
+  .vk-mobile-nav-menu-outer {
+    transform: translateY(50px);
+  }
+  .vk-mobile-nav-menu-btn.menu-open {
+    background-image: url("http://iwamilaw2408.local/wp-content/uploads/2024/09/close_btn.png");
+    border: none;
+  }
+}
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */
   font-weight: normal;
   font-style: normal;
 }
+.site-body {
+  padding-top: 0px;
+}
+
 h1.headLine {
   position: relative;
   color: #00194A;

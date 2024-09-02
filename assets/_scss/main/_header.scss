@@ -1,0 +1,145 @@
+@use '../variables';
+
+.site-header-container{
+    flex-direction: column!important;
+    .headerUpper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:96px;
+    }
+
+    .site-header-logo{
+        margin:0;
+        padding:0;
+        width:auto;
+    }
+
+    .telForm{
+        display: flex;
+        flex-direction: row;
+        column-gap:32px;
+    }
+
+    .tel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            width:33px;
+            height:33px;
+        }
+        p{
+            margin: 0;
+            margin-left:4px;
+            font-size: 20px;
+        }
+    }
+    .form{
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                width:33px;
+                height:33px;
+            }
+            p{
+                margin: 0;
+                margin-left:4px;
+                font-size: 20px;
+            }    
+        }
+    }
+}
+
+.global-nav{
+    max-width:100%;
+    background-color: variables.$main-color;
+    display: flex;
+    justify-content: center!important;
+    ul{
+        width:80%;
+        max-width: 1140px;
+        a{
+            color: white!important;
+        }
+    
+    }
+    .global-nav-list>li{
+        width: 14%;
+        padding-left:5%;
+        padding-right:5%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.page-header,.site-footer-content{
+    display: none;
+}
+.site-footer-copyright>p:nth-child(2){
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .site-header-container{
+        .telForm{
+            column-gap:8px;
+            .tel,.form{
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .vk-mobile-nav-menu-btn{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .site-header-container{
+        .telForm{
+            display: none;
+        }
+    }
+    .global-nav{
+        display: none;
+        ul{
+            width:95%;
+            li{
+                flex-shrink: 0;
+            }
+            a>strong{
+                font-size: 12px;
+            }
+        }
+        
+    }
+    body .vk-mobile-nav-menu-btn{
+        background-image: url("http://iwamilaw2408.local/wp-content/uploads/2024/09/hamburger.png");
+        background-size: cover;
+        background-position: center;
+        width:64px;
+        height:64px;
+        display: block;
+        position: absolute;
+        top:16px!important;
+        left:80%;
+        border:none;
+    }
+    .vk-mobile-nav-menu-outer{
+        transform: translateY(50px);
+    }
+    .vk-mobile-nav-menu-btn.menu-open{
+        background-image:url("http://iwamilaw2408.local/wp-content/uploads/2024/09/close_btn.png");
+        border:none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    
+}

@@ -8,6 +8,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.editor-styles-wrapper .site-body {
+  padding-top: 0px;
+}
 .editor-styles-wrapper h1.headLine {
   position: relative;
   color: #00194A;
