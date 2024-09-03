@@ -41,12 +41,12 @@ h2::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0px; /*線の上下位置*/
+  bottom: 0px;
   display: inline-block;
-  width: 120px; /*線の長さ*/
-  height: 4px; /*線の太さ*/
-  transform: translateX(-50%); /*位置調整*/
-  background-color: #D4AF37; /*線の色*/
+  width: 120px;
+  height: 4px;
+  transform: translateX(-50%);
+  background-color: #D4AF37;
 }
 
 h3 {
@@ -351,51 +351,52 @@ h4::after {
   margin-bottom: 0px;
 }
 
-.site-header-container {
+.site-header-container, .cta {
   flex-direction: column !important;
 }
-.site-header-container .headerUpper {
+.site-header-container .headerUpper, .cta .headerUpper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 96px;
 }
-.site-header-container .site-header-logo {
+.site-header-container .site-header-logo, .cta .site-header-logo {
   margin: 0;
   padding: 0;
   width: auto;
+  display: block;
 }
-.site-header-container .telForm {
+.site-header-container .telForm, .cta .telForm {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.site-header-container .tel {
+.site-header-container .tel, .cta .tel {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.site-header-container .tel img {
+.site-header-container .tel img, .cta .tel img {
   width: 33px;
   height: 33px;
 }
-.site-header-container .tel p {
+.site-header-container .tel p, .cta .tel p {
   margin: 0;
   margin-left: 4px;
   font-size: 20px;
 }
-.site-header-container .form a {
+.site-header-container .form a, .cta .form a {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.site-header-container .form a img {
+.site-header-container .form a img, .cta .form a img {
   width: 33px;
   height: 33px;
 }
-.site-header-container .form a p {
+.site-header-container .form a p, .cta .form a p {
   margin: 0;
   margin-left: 4px;
   font-size: 20px;
@@ -404,7 +405,7 @@ h4::after {
 .global-nav {
   max-width: 100%;
   background-color: #00194A;
-  display: flex;
+  display: flex !important;
   justify-content: center !important;
 }
 .global-nav ul {
@@ -416,8 +417,8 @@ h4::after {
 }
 .global-nav .global-nav-list > li {
   width: 14%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   justify-content: center;
 }
@@ -447,7 +448,7 @@ h4::after {
     display: none;
   }
   .global-nav {
-    display: none;
+    display: none !important;
   }
   .global-nav ul {
     width: 95%;
@@ -476,6 +477,70 @@ h4::after {
   .vk-mobile-nav-menu-btn.menu-open {
     background-image: url("http://iwamilaw2408.local/wp-content/uploads/2024/09/close_btn.png");
     border: none;
+  }
+}
+.site-footer {
+  margin-bottom: 64px;
+  background-color: #00194A;
+}
+.site-footer li > a, .site-footer .site-footer-copyright > p {
+  color: #fff !important;
+}
+.site-footer ul {
+  display: flex;
+  justify-content: center;
+}
+.site-footer ul li {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.site-footer .site-footer-copyright {
+  padding: 0;
+}
+
+.cta {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* 影をつけて浮かせる */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.cta .form {
+  background-color: #D4AF37;
+  padding: 12px 6px;
+  border-radius: 8px;
+}
+.cta .form a > p {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 16px;
+  }
+  .site-footer ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .site-footer ul li {
+    height: 24px;
+    line-height: 24px;
+  }
+  .site-footer ul li a {
+    padding: 0;
+  }
+  .cta .tel p, .cta .form p {
+    font-size: 12px !important;
+  }
+  .cta .form {
+    padding: 8px 4px;
   }
 }
 @font-face {
@@ -520,12 +585,12 @@ h2::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0px; /*線の上下位置*/
+  bottom: 0px;
   display: inline-block;
-  width: 120px; /*線の長さ*/
-  height: 4px; /*線の太さ*/
-  transform: translateX(-50%); /*位置調整*/
-  background-color: #D4AF37; /*線の色*/
+  width: 120px;
+  height: 4px;
+  transform: translateX(-50%);
+  background-color: #D4AF37;
 }
 
 h3 {

@@ -1,6 +1,6 @@
 @use '../variables';
 
-.site-header-container{
+.site-header-container,.cta{
     flex-direction: column!important;
     .headerUpper{
         display: flex;
@@ -14,6 +14,7 @@
         margin:0;
         padding:0;
         width:auto;
+        display:block;
     }
 
     .telForm{
@@ -57,7 +58,7 @@
 .global-nav{
     max-width:100%;
     background-color: variables.$main-color;
-    display: flex;
+    display: flex!important;
     justify-content: center!important;
     ul{
         width:80%;
@@ -69,8 +70,8 @@
     }
     .global-nav-list>li{
         width: 14%;
-        padding-left:5%;
-        padding-right:5%;
+        padding-left:0;
+        padding-right:0;
         display: flex;
         justify-content: center;
     }
@@ -107,7 +108,7 @@
         }
     }
     .global-nav{
-        display: none;
+        display: none!important;
         ul{
             width:95%;
             li{
