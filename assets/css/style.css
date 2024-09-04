@@ -63,7 +63,7 @@ h3::after {
 
 p {
   font-family: "Hiragino Mincho Pro";
-  font-size: 20px;
+  font-size: 16px;
   color: #00194A !important;
 }
 
@@ -80,20 +80,51 @@ h3 + p {
   justify-content: center;
 }
 
-.seeMore {
+.seeMore > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+}
+.seeMore > div a {
+  font-family: "Hiragino Mincho Pro";
+  color: #00194A;
+}
+.seeMore > div a:hover {
+  background-color: #fff !important;
 }
 
-.seeMore > p {
-  display: inline-block;
-  border-bottom: 2px solid #D4AF37;
-  margin: 0 !important;
+.wp-block-button.is-style-outline > .wp-block-button__link:hover {
+  background-color: #fff !important;
+  color: #00194A !important;
+}
+
+.seeMore > div > a::before {
+  background: #D4AF37;
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  bottom: 4px;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+
+.seeMore > div > a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 ol {
   font-family: "Hiragino Mincho Pro";
+}
+
+.page_top_btn {
+  bottom: 1%;
 }
 
 @media screen and (max-width: 767px) {
@@ -153,6 +184,9 @@ ol {
   }
   .individualMisconception p {
     font-size: 16px !important;
+  }
+  .consultationFlow .flow {
+    max-width: 80% !important;
   }
 }
 h2.headLine.growProblem {
@@ -607,7 +641,7 @@ h3::after {
 
 p {
   font-family: "Hiragino Mincho Pro";
-  font-size: 20px;
+  font-size: 16px;
   color: #00194A !important;
 }
 
@@ -624,20 +658,51 @@ h3 + p {
   justify-content: center;
 }
 
-.seeMore {
+.seeMore > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+}
+.seeMore > div a {
+  font-family: "Hiragino Mincho Pro";
+  color: #00194A;
+}
+.seeMore > div a:hover {
+  background-color: #fff !important;
 }
 
-.seeMore > p {
-  display: inline-block;
-  border-bottom: 2px solid #D4AF37;
-  margin: 0 !important;
+.wp-block-button.is-style-outline > .wp-block-button__link:hover {
+  background-color: #fff !important;
+  color: #00194A !important;
+}
+
+.seeMore > div > a::before {
+  background: #D4AF37;
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  bottom: 4px;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+
+.seeMore > div > a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 ol {
   font-family: "Hiragino Mincho Pro";
+}
+
+.page_top_btn {
+  bottom: 1%;
 }
 
 @media screen and (max-width: 767px) {

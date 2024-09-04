@@ -59,7 +59,7 @@
 }
 .editor-styles-wrapper p {
   font-family: "Hiragino Mincho Pro";
-  font-size: 20px;
+  font-size: 16px;
   color: #00194A !important;
 }
 .editor-styles-wrapper h3 + p {
@@ -72,18 +72,46 @@
   display: flex;
   justify-content: center;
 }
-.editor-styles-wrapper .seeMore {
+.editor-styles-wrapper .seeMore > div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
 }
-.editor-styles-wrapper .seeMore > p {
-  display: inline-block;
-  border-bottom: 2px solid #D4AF37;
-  margin: 0 !important;
+.editor-styles-wrapper .seeMore > div a {
+  font-family: "Hiragino Mincho Pro";
+  color: #00194A;
+}
+.editor-styles-wrapper .seeMore > div a:hover {
+  background-color: #fff !important;
+}
+.editor-styles-wrapper .wp-block-button.is-style-outline > .wp-block-button__link:hover {
+  background-color: #fff !important;
+  color: #00194A !important;
+}
+.editor-styles-wrapper .seeMore > div > a::before {
+  background: #D4AF37;
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  bottom: 4px;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+.editor-styles-wrapper .seeMore > div > a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 .editor-styles-wrapper ol {
   font-family: "Hiragino Mincho Pro";
+}
+.editor-styles-wrapper .page_top_btn {
+  bottom: 1%;
 }
 @media screen and (max-width: 767px) {
   .editor-styles-wrapper h1.headLine {
