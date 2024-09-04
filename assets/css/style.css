@@ -55,6 +55,7 @@ h3 {
   padding: 0;
   color: #00194A !important;
   margin-bottom: 8px !important;
+  font-size: 20px;
 }
 
 h3::after {
@@ -191,6 +192,7 @@ ol {
 }
 h2.headLine.growProblem {
   margin-top: 24px !important;
+  font-size: 32px !important;
 }
 
 .flowBlock .headLine {
@@ -633,6 +635,7 @@ h3 {
   padding: 0;
   color: #00194A !important;
   margin-bottom: 8px !important;
+  font-size: 20px;
 }
 
 h3::after {
