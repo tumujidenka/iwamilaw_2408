@@ -5,6 +5,9 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 24px;
+    h3{
+        font-size: 28px;
+    }
 }
 
 h4{
@@ -12,6 +15,7 @@ h4{
     color: variables.$main-color;
     position: relative;
     margin-bottom: 0px!important;
+    font-size: 20px;
 }
 
 h4::after{
@@ -29,4 +33,21 @@ h4::after{
 
 .flowBlockText{
     transform: translateX(16px);
+}
+
+.arrowWithNotResolve{
+    position: relative;
+    p{
+        position: absolute;
+        top: 8%;
+        right: 34%;
+    }
+}
+
+.longArrow{
+    background-image:url("http://iwamilaw2408.local/wp-content/uploads/2024/09/Vector2.png");
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    z-index: 10;
 }

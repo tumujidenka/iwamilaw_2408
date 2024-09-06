@@ -31,7 +31,7 @@ h2.headLine {
   border-top: none;
   border-bottom: none;
   position: relative;
-  margin-top: 80px !important;
+  margin-top: 40px !important;
   margin-bottom: 24px !important;
   padding-bottom: 8px;
   color: #00194A;
@@ -201,12 +201,16 @@ h2.headLine.growProblem {
   justify-content: center;
   margin-bottom: 24px;
 }
+.flowBlock .headLine h3 {
+  font-size: 28px;
+}
 
 h4 {
   background-color: #fff;
   color: #00194A;
   position: relative;
   margin-bottom: 0px !important;
+  font-size: 20px;
 }
 
 h4::after {
@@ -223,6 +227,23 @@ h4::after {
 
 .flowBlockText {
   transform: translateX(16px);
+}
+
+.arrowWithNotResolve {
+  position: relative;
+}
+.arrowWithNotResolve p {
+  position: absolute;
+  top: 8%;
+  right: 34%;
+}
+
+.longArrow {
+  background-image: url("http://iwamilaw2408.local/wp-content/uploads/2024/09/Vector2.png");
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  z-index: 10;
 }
 
 .feeTable table {
@@ -611,7 +632,7 @@ h2.headLine {
   border-top: none;
   border-bottom: none;
   position: relative;
-  margin-top: 80px !important;
+  margin-top: 40px !important;
   margin-bottom: 24px !important;
   padding-bottom: 8px;
   color: #00194A;
