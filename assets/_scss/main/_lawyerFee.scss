@@ -11,4 +11,24 @@
     tbody > tr:nth-child(1),tr:nth-child(3){
         background-color: #E3E3E3;
     }
+    tbody{
+        tr>td{
+            color:variables.$main-color;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    table{
+        tbody{
+            tr>td{
+                font-size: 16px!important;
+            }
+        }
+        thead{
+            tr>thjasdflkjsdflkjsadf{
+                font-size: 16px!important;
+            }
+        }
+    }
 }

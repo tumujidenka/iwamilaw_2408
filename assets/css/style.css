@@ -256,7 +256,39 @@ h4::after {
 .feeTable tbody > tr:nth-child(1), .feeTable tr:nth-child(3) {
   background-color: #E3E3E3;
 }
+.feeTable tbody tr > td {
+  color: #00194A;
+}
 
+@media screen and (max-width: 768px) {
+  table tbody tr > td {
+    font-size: 16px !important;
+  }
+  table thead tr > thjasdflkjsdflkjsadf {
+    font-size: 16px !important;
+  }
+}
+.contactSubText {
+  margin-bottom: 16px !important;
+}
+
+.form table {
+  margin-bottom: 16px;
+}
+.form table tr {
+  height: 60px;
+}
+.form table tr th {
+  width: 30%;
+  background-color: #00194A;
+  border: 2px solid #aaaaaa;
+}
+.form table tr th p {
+  color: #fff !important;
+}
+.form table tr td {
+  border: 2px solid #aaaaaa;
+}
 .form .submitBtn {
   display: flex;
   justify-content: center;
@@ -266,12 +298,27 @@ h4::after {
 }
 .form input.btn-block {
   width: 50%;
+  background-color: #D4AF37;
+  border: none;
+  height: 60px;
 }
 .form .wpcf7-form-control-wrap {
   display: flex;
   justify-content: center;
 }
+.form .wpcf7-response-output {
+  border: none !important;
+  color: #dc3232;
+}
 
+@media screen and (max-width: 768px) {
+  th {
+    width: 40% !important;
+  }
+  th p {
+    font-size: 12px;
+  }
+}
 .name span {
   font-size: 20px;
 }
@@ -600,6 +647,22 @@ h4::after {
     padding: 8px 4px;
   }
 }
+.privacyList .case {
+  margin-bottom: 32px;
+}
+.privacyList .case h2 {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00194A;
+}
+.privacyList .case h2::after {
+  content: none;
+}
+.privacyList .case ol li {
+  color: #00194A;
+}
+
 @font-face {
   font-family: "Hiragino Mincho Pro";
   src: url("../../../fonts/hiraginomincho.otf") format("otf"); /* medium */

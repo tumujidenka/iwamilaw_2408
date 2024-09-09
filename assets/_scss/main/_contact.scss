@@ -1,6 +1,29 @@
 @use '../variables';
 
-.form{
+.contactSubText{
+    margin-bottom:16px!important;
+}
+
+.form{    
+    table{
+        margin-bottom: 16px;
+        tr{
+            height:60px;
+            th{
+                width:30%;
+                background-color: variables.$main-color;
+                border:2px solid #aaaaaa;
+                p{
+                    color:#fff!important;
+                }
+            }
+            td{
+                border:2px solid #aaaaaa;
+            }
+        }
+    }
+
+
     .submitBtn{
         display: flex;
         justify-content: center;
@@ -10,9 +33,25 @@
     }
     input.btn-block{
         width:50%;
+        background-color: variables.$sub-color;
+        border:none;
+        height:60px;
     }
     .wpcf7-form-control-wrap{
         display: flex;
         justify-content: center;
     }
+    .wpcf7-response-output{
+        border:none!important;
+        color:#dc3232;
+    }
+}
+
+@media screen and (max-width:768px) {
+    th{
+        width:40%!important;
+        p{
+            font-size: 12px;
+        }
+     }    
 }
