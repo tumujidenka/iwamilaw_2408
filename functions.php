@@ -50,5 +50,5 @@ if ( $my_lightning_additional_css ) {
  */
 function twpp_change_excerpt_length( $length ) {
 	return 50; //抜粋する文字数
-  }
-  add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
+}
+add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );

@@ -4,6 +4,10 @@
     color:variables.$main-color;
 }
 
+h2.headLine.newsTitle{
+    margin-bottom:40px!important;
+}
+
 .entry-meta-item-updated,.entry-meta-item-author,.fa-calendar-alt::before{
     display:none;
 }

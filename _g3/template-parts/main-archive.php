@@ -1,3 +1,31 @@
+<!-- 現在表示しているページの投稿タイプをURLから判断して、対象のタイトルを表示する -->
+<?php 
+	$articleType = $_SERVER['REQUEST_URI']; 
+		
+	switch (true) {
+		case strpos($articleType, '/news') !== false:
+			// お知らせページ
+			?>
+<h2 class="wp-block-heading has-text-align-center headLine newsTitle" style="font-size:40px">お知らせ</h2>
+			<?php
+			break;
+	
+		case strpos($articleType, '/articlelist') !== false:
+			// 弁護士コラムページ
+			?>
+<h2 class="wp-block-heading has-text-align-center headLine articleTitle" style="font-size:40px">弁護士コラム</h2>
+		<?php
+		break;
+		default:
+			// どの条件にも該当しない場合の処理
+			?>
+<h2 class="wp-block-heading has-text-align-center headLine" style="font-size:40px"></h2>
+		<?php
+	}
+?>
+
+
+
 <?php
 /**
  * Archive main template

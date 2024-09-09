@@ -34,24 +34,53 @@
 			</div>
 		</div>
 		<?php do_action( 'lightning_site_header_logo_after' ); ?>
-
 	</div>
-		<!-- ヘッダー下段：各ページへのリンクタブ -->
-		<?php
-		if ( class_exists( 'VK_Description_Walker' ) ) {
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'global-nav',
-					'container'       => 'nav',
-					'container_class' => lightning_get_the_class_name( 'global-nav' ),
-					'container_id'    => 'global-nav',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s vk-menu-acc global-nav-list nav">%3$s</ul>',
-					'fallback_cb'     => '',
-					'echo'            => true,
-					'walker'          => new VK_Description_Walker(),
-				)
-			);
-		}
-		?>
+
+	<!-- ヘッダー下段：各ページへのリンクタブ -->		
+	<nav id="global-nav" class="global-nav global-nav--layout--float-right">
+		<ul id="menu-footernavigation" class="menu vk-menu-acc global-nav-list nav vk-menu-acc-active">
+			<li id="menu-item-2646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+				<a href="http://iwamilaw2408.local/">
+					<strong class="global-nav-name">TOP</strong>
+				</a>
+			</li>
+			<li id="menu-item-2645" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2560 current_page_item">
+				<a href="http://iwamilaw2408.local/growinglaborproblem/">
+					<strong class="global-nav-name">医師の労働問題</strong>
+				</a>
+			</li>
+			<li id="menu-item-2787" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/news/">
+					<strong class="global-nav-name">お知らせ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2644" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/flow/">
+					<strong class="global-nav-name">手続きの流れ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/fee/">
+					<strong class="global-nav-name">弁護士費用</strong>
+				</a>
+			</li>
+			<li id="menu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/articlelist/">
+					<strong class="global-nav-name">弁護士コラム</strong>
+				</a>
+			</li>
+			<li id="menu-item-2655" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/inquiry/">
+					<strong class="global-nav-name">お問い合わせ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/introduction/">
+					<strong class="global-nav-name">弁護士紹介</strong>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
 	<?php do_action( 'lightning_site_header_append' ); ?>
 </header>

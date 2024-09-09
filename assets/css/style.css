@@ -363,6 +363,8 @@ h4::after {
 }
 .newsRow .newsTitle > a {
   color: #00194A;
+  overflow: hidden; /* はみ出た部分を非表示 */
+  text-overflow: ellipsis; /* はみ出た部分に「...」を表示 */
 }
 
 .pagination {
@@ -388,8 +390,21 @@ h4::after {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .newsRow .newsDate {
+    width: 35%;
+    font-size: 12px !important;
+  }
+  .newsRow .newsTitle {
+    font-size: 12px !important;
+  }
+}
 .entry-title {
   color: #00194A;
+}
+
+h2.headLine.newsTitle {
+  margin-bottom: 40px !important;
 }
 
 .entry-meta-item-updated, .entry-meta-item-author, .fa-calendar-alt::before {
