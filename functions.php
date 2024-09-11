@@ -52,3 +52,16 @@ function twpp_change_excerpt_length( $length ) {
 	return 50; //抜粋する文字数
 }
 add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
+
+
+/**
+ * script.jsファイルを追加してJS編集ができるようにする
+ */
+function my_enqueue_scripts() {
+	wp_enqueue_script( 
+	  'primary-script', 
+	  get_stylesheet_directory_uri() . '/script.js',
+	  array( 'jquery' )
+	);
+  }
+  add_action( 'wp_enqueue_scripts', 'my_enqueue_scripts' );

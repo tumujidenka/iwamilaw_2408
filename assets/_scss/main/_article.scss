@@ -12,9 +12,89 @@ h2.headLine.newsTitle{
     display:none;
 }
 
+
+.flexpart{
+    display: flex;
+}
+
+.main-section.main-section--col--two{
+    flex:3;
+}
+
+.sub-section.sub-section--col--two{
+    flex:1;
+    margin-top: 120px;
+}
+
+.sub-section-title{
+    font-family: 'Hiragino Mincho Pro';
+    text-align: center;
+    font-size: 20px;
+    text-decoration: #D4AF37 underline 3px;
+    border-bottom:none;
+}
+
+.sub-section-title::after{
+    width:0;
+}
+
+.postList_body{
+    display: flex;
+    flex-direction: column-reverse;    
+}
+
+.postList_title.entry-title > a{
+    color:variables.$main-color;
+    font-family: 'Hiragino Mincho Pro';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.wp-block-heading.has-text-align-center.sub-section-title{
+    border-top:none;
+}
+
+.post-excerpt{
+    display: none;
+}
+
 .published{
     color:variables.$main-color;
     font-family: 'Hiragino Mincho Pro';
+}
+
+.published.postList_date.postList_meta_items{
+    color:variables.$main-color;
+    font-family: 'Hiragino Mincho Pro';
+}
+
+.wp-block-categories-list.wp-block-categories{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    li{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-top:2px solid variables.$sub-color;
+        border-left:2px solid variables.$sub-color;
+        border-right:2px solid variables.$sub-color;
+        height:40px;
+        a{
+            text-decoration: none;
+            color:variables.$main-color;
+            line-height: 40px;
+        }
+    }
+}
+  
+#post_views_counter_list_widget-2 ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    .post-thumbnail>img{
+        width:80px;
+    }
 }
 
 .article{
@@ -37,9 +117,9 @@ h2.headLine.newsTitle{
         position: relative;
     }
     .articleDate{
-        font-family: sans-serif;
+        font-family: 'Hiragino Mincho Pro'!important;
         font-size: 12px;
-        color:#494C53!important;
+        color:variable.$main-color!important;
         margin-bottom:4px;
         line-height: 1rem;
     }
@@ -50,6 +130,7 @@ h2.headLine.newsTitle{
     .articleTitle>a{
         color: variables.$main-color!important;
         text-decoration: none;
+        font-weight: bold;
     }
     .articleSummary{
         font-size: 16px;
@@ -58,6 +139,7 @@ h2.headLine.newsTitle{
         position: absolute;
         top:0;
         right:0;
+        padding:8px;
         border: 1px solid variables.$sub-color;
         p{
             margin:0;
