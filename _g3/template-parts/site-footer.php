@@ -1,6 +1,4 @@
 <footer class="<?php lightning_the_class_name( 'site-footer' ); ?>">
-
-
 	<!-- フッター上段：各ページへのリンクタブ -->		
 	<div id="global-nav" class="global-nav global-nav--layout--float-right">
 		<ul id="menu-footernavigation" class="menu vk-menu-acc global-nav-list nav vk-menu-acc-active">

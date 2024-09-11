@@ -19,11 +19,13 @@ h2.headLine.newsTitle{
 
 .main-section.main-section--col--two{
     flex:3;
+    float:none;
 }
 
 .sub-section.sub-section--col--two{
     flex:1;
     margin-top: 120px;
+    float:none;
 }
 
 .sub-section-title{
@@ -68,6 +70,7 @@ h2.headLine.newsTitle{
     font-family: 'Hiragino Mincho Pro';
 }
 
+
 .wp-block-categories-list.wp-block-categories{
     list-style: none;
     margin-left: 0;
@@ -85,6 +88,10 @@ h2.headLine.newsTitle{
             color:variables.$main-color;
             line-height: 40px;
         }
+    }
+    li:last-child{
+        border-bottom:2px solid variables.$sub-color;
+
     }
 }
   
@@ -137,7 +144,7 @@ h2.headLine.newsTitle{
     }
     .articleCategory{
         position: absolute;
-        top:0;
+        top:-24px;
         right:0;
         padding:8px;
         border: 1px solid variables.$sub-color;

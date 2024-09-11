@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .site-body {
   padding-top: 0px;
 }
@@ -134,11 +141,13 @@ ol {
 
 .main-section.main-section--col--two{
   flex:3;
+  float:none;
 }
 
 .sub-section.sub-section--col--two{
   flex:1;
   margin-top: 120px;
+  float:none;
 }
 
 .sub-section-title{
@@ -185,6 +194,10 @@ ol {
   height:40px;
 }
 
+.wp-block-categories-list.wp-block-categories li:last-child{
+  border-bottom:2px solid #D4AF37;
+}
+
 .wp-block-categories-list.wp-block-categories li a{
   text-decoration: none;
   color:#00194A;
@@ -206,6 +219,20 @@ ol {
   display: none;
 }
 
+.site-footer{
+  margin-top:auto;
+}
+
+.site-footer ul{
+  width:100%!important;
+}
+.site-footer ul>li>a{
+  font-size: 10px;
+}
+
+.site-footer ul>li>a strong{
+  font-weight: normal;
+}
 
 @media screen and (max-width: 767px) {
   h1.headLine {
@@ -543,7 +570,7 @@ h2.headLine.newsTitle {
 }
 .article .articleCategory {
   position: absolute;
-  top: 0;
+  top: -24px;
   right: 0;
   padding:8px;
   border: 1px solid #D4AF37;
@@ -652,11 +679,9 @@ h2.headLine.newsTitle {
   .site-header-container .telForm {
     display: none;
   }
-  .global-nav {
-    display: none !important;
-  }
   .global-nav ul {
     width: 95%;
+    margin-bottom: 24px;
   }
   .global-nav ul li {
     flex-shrink: 0;

@@ -1,23 +1,13 @@
 @use '../variables';
 
-// .site-footer{
-//     margin-bottom: 64px;
-//     background-color: variables.$main-color;
-//     li>a,.site-footer-copyright>p{
-//         color:#fff!important;
-//     }
-//     ul{
-//         display: flex;
-//         justify-content: center;
-//         li{
-//             padding-left: 2%;
-//             padding-right: 2%;
-//         }
-//     }
-//     .site-footer-copyright{
-//         padding:0;
-//     }
-// }
+.site-footer{
+    margin-top:auto;
+    ul>li>a{
+        strong{
+            font-weight: normal;
+        }
+    }
+}
 
 .cta{
     background-color: #fff;
@@ -41,6 +31,16 @@
     }
 }
 
+@media screen and (max-width:991px) {
+    .site-footer{
+        ul>li>a{
+            strong{
+                font-size: 9px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:767px) {
     .site-footer{
         padding-bottom:16px;
@@ -48,6 +48,7 @@
             flex-direction: column;
             align-items: center;
             margin-top:16px;
+            margin-bottom: 24px;
             li{
                 height:24px;    
                 line-height: 24px;
