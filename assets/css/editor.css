@@ -8,6 +8,11 @@
   font-weight: normal;
   font-style: normal;
 }
+.editor-styles-wrapper body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .editor-styles-wrapper .site-body {
   padding-top: 0px;
 }

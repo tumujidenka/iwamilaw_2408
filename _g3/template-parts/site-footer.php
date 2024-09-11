@@ -1,67 +1,61 @@
 <footer class="<?php lightning_the_class_name( 'site-footer' ); ?>">
 
-	<?php if ( has_nav_menu( 'footer-nav' ) ) : ?>
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location'  => 'footer-nav',
-				'container'       => 'nav',
-				'container_class' => 'footer-nav',
-				'items_wrap'      => '<div class="container"><ul id="%1$s" class="%2$s ' . lightning_get_the_class_name( 'footer-nav-list' ) . ' nav nav--line">%3$s</ul></div>',
-				'fallback_cb'     => '',
-				'depth'           => 1,
-			)
-		);
-		?>
-	<?php endif; ?>
-	
-	<?php
-	$footer_widget_area_count = apply_filters( 'lightning_footer_widget_area_count', 3 );
-	$footer_widget_exists     = false;
-	for ( $i = 1; $i <= $footer_widget_area_count; $i++ ) {
-		if ( is_active_sidebar( 'footer-widget-' . $i ) ) {
-			$footer_widget_exists = true;
-		}
-	}
-	?>
-	<?php if ( true === $footer_widget_exists ) : ?>
-		<div class="container site-footer-content">
-		<?php do_action( 'lightning_site_footer_content_prepend' ); ?>
-			<div class="row">
-				<?php
-				// Area setting
-				$footer_widget_area = array(
-					// Use 1 widget area
-					1 => array( 'class' => 'col-lg-12' ),
-					// Use 2 widget area
-					2 => array( 'class' => 'col-lg-6 col-md-6' ),
-					// Use 3 widget area
-					3 => array( 'class' => 'col-lg-4 col-md-6' ),
-					// Use 4 widget area
-					4 => array( 'class' => 'col-lg-3 col-md-6' ),
-					// Use 6 widget area
-					6 => array( 'class' => 'col-lg-2 col-md-6' ),
-				);
-
-				// Print widget area
-				for ( $i = 1; $i <= $footer_widget_area_count; ) {
-					echo '<div class="' . $footer_widget_area[ $footer_widget_area_count ]['class'] . '">';
-					if ( is_active_sidebar( 'footer-widget-' . $i ) ) {
-						dynamic_sidebar( 'footer-widget-' . $i );
-					}
-					echo '</div>';
-					$i++;
-				}
-				?>
-			</div>
-		<?php do_action( 'lightning_site_footer_content_append' ); ?>
-		</div>
-	<?php endif; ?>
-
-	<?php do_action( 'lightning_copyright_before' ); ?>
-	<div class="container site-footer-copyright">
-			<?php lightning_the_footer_copyight(); ?>
+	<!-- フッター上段：各ページへのリンクタブ -->		
+	<div id="global-nav" class="global-nav global-nav--layout--float-right">
+		<ul id="menu-footernavigation" class="menu vk-menu-acc global-nav-list nav vk-menu-acc-active">
+			<li id="menu-item-2646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+				<a href="http://iwamilaw2408.local/">
+					<strong class="global-nav-name">TOP</strong>
+				</a>
+			</li>
+			<li id="menu-item-2645" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2560 current_page_item">
+				<a href="http://iwamilaw2408.local/growinglaborproblem/">
+					<strong class="global-nav-name">医師の労働問題</strong>
+				</a>
+			</li>
+			<li id="menu-item-2787" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/news/">
+					<strong class="global-nav-name">お知らせ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2644" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/flow/">
+					<strong class="global-nav-name">手続きの流れ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/fee/">
+					<strong class="global-nav-name">弁護士費用</strong>
+				</a>
+			</li>
+			<li id="menu-item-2695" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/articlelist/">
+					<strong class="global-nav-name">弁護士コラム</strong>
+				</a>
+			</li>
+			<li id="menu-item-2655" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/inquiry/">
+					<strong class="global-nav-name">お問い合わせ</strong>
+				</a>
+			</li>
+			<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/introduction/">
+					<strong class="global-nav-name">弁護士紹介</strong>
+				</a>
+			</li>
+			<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/privacy/">
+					<strong class="global-nav-name">プライバシーポリシー</strong>
+				</a>
+			</li>
+			<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page">
+				<a href="http://iwamilaw2408.local/copyright/">
+					<strong class="global-nav-name">著作権・免責</strong>
+				</a>
+			</li>
+		</ul>
 	</div>
+
 
 </footer> 
 <div class="cta">
